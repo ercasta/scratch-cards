@@ -1,0 +1,7 @@
+per sempre
+	se < (distanza da (Personaggio v)) < (150) > allora
+		ripeti (10) volte
+			punta verso (Personaggio v)
+			fai (3) passi
+	end
+end

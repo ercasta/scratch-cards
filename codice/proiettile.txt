@@ -1,0 +1,8 @@
+quando vengo clonato
+raggiungi (Personaggio v)
+punta in direzione ([direzione v] di (Personaggio v))
+mostra
+ripeti (10) volte
+    fai (10) passi
+end
+nascondi

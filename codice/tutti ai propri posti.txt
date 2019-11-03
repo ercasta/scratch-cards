@@ -1,0 +1,7 @@
+invia a tutti (inizio! v) e attendi
+
+quando ricevo [inizio! v]
+vai a x: (-100) y: (150)
+
+quando ricevo [inizio! v]
+vai a x: (100) y: (30)

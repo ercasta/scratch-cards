@@ -1,0 +1,7 @@
+se <tasto (spazio v) premuto> allora
+ripeti fino a quando <non <tasto (spazio v) premuto>
+    cambia [energia v] di (1)
+    attendi (0.1) secondi
+end
+fai qualcosa
+end

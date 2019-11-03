@@ -1,0 +1,5 @@
+quando si clicca sulla bandiera verde
+porta [forza v] a (numero a caso tra (6) e (10))
+porta [agilità v] a (numero a caso tra (5) e (7))
+porta [vitalità v] a (numero a caso tra (7) e (9))
+porta [mente v] a (numero a caso tra (4) e (8))

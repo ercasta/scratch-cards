@@ -1,0 +1,3 @@
+per sempre
+	fai (velocità) passi
+end

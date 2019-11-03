@@ -1,0 +1,12 @@
+se <sta toccando (trappola v)> allora
+se <(tregua) = [no]> allora
+nascondi
+porta [tregua v] a [si]
+end
+end
+
+per sempre
+se <(tregua) = [si]> allora
+attendi (3) secondi
+porta [tregua v] a [no]
+end

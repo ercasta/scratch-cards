@@ -1,0 +1,12 @@
+quando si clicca sulla bandiera verde
+per sempre 
+   se < tasto (freccia destra v) premuto > allora
+	  ruota in senso orario di (5) gradi
+  end
+
+quando si clicca sulla bandiera verde
+per sempre 
+    se < tasto (freccia sinistra v) premuto > allora
+	  ruota in senso antiorario di (5) gradi
+  end
+end

@@ -1,0 +1,5 @@
+quando si clicca sulla bandiera verde
+per sempre 
+  se < tasto (freccia sù v) premuto > allora
+	  fai (3) passi
+  end

@@ -1,0 +1,9 @@
+per sempre
+se <sta toccando (personaggio v) > allora
+invia a tutti [raccolto v] e attendi
+nascondi
+end 
+
+quando ricevo [raccolto v]
+se <sta toccando (ricarica v) > allora
+cambia [energia v] di (10)

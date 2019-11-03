@@ -1,0 +1,5 @@
+quando si clicca sulla bandiera verde
+per sempre
+se <sta toccando (traguardo v)> allora
+cambia [punti v] di (1)
+attendi fino a quando <non <sta toccando (traguardo v)>>

@@ -1,0 +1,6 @@
+per sempre
+attendi (1) secondi
+cambia [tempo rimasto v] di (-1)
+se < (tempo rimasto) = (0)> allora
+ferma [tutto v]
+end 

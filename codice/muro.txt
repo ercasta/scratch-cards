@@ -1,0 +1,4 @@
+fai (10) passi
+se <sta toccando il colore (#74747d)> allora
+	fai (-10) passi
+end

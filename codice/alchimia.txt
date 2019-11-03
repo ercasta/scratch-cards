@@ -1,0 +1,10 @@
+se <sta toccando (secondo oggetto v)> allora
+nascondi
+invia a tutti (trasforma v)
+
+quando ricevo [trasforma v]
+nascondi
+
+quando ricevo [trasforma v]
+raggiungi (primo oggetto v)
+mostra

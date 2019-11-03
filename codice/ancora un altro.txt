@@ -1,0 +1,8 @@
+quando si clicca sulla bandiera verde
+nascondi
+per sempre 
+  se < tasto (spazio v) premuto > allora
+  crea clone di (me stesso v)
+  attendi (0.3) secondi
+  end
+end

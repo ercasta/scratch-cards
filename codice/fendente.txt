@@ -1,0 +1,6 @@
+se <tasto (spazio v) premuto> allora
+raggiungi [Personaggio v]
+punta in direzione ([direzione v] di (Personaggio v))
+mostra
+attendi (0.2) secondi
+nascondi

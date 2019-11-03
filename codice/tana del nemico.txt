@@ -1,0 +1,9 @@
+per sempre
+attendi (15) secondi
+invia a tutti (sbuca! v)
+
+quando ricevo [sbuca v]
+crea clone di (me stesso v)
+
+quando vengo clonato
+raggiungi (tana v)

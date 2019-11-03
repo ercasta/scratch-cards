@@ -1,0 +1,7 @@
+se < sta toccando (Personaggio v)> allora
+ripeti fino a quando <tasto (spazio v) premuto>
+    raggiungi (Personaggio v)
+end
+punta in direzione ( [direzione v] di (Personaggio v) )
+fai (30) passi
+end

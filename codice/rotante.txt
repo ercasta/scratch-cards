@@ -1,0 +1,3 @@
+porta [velocità v] a (10)
+per sempre
+    ruota in senso orario di (velocità) gradi

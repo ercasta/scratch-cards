@@ -1,0 +1,13 @@
+porta [x nemico v] a (posizione x)
+porta [y nemico v] a (posizione y)
+invia a tutti [bottino] e attendi
+
+quando ricevo [bottino v]
+ripeti (numero a caso tra (1) e (3)) volte
+crea clone di [me stesso v]
+
+quando vengo clonato
+vai a x: (x nemico) y: (y nemico)
+punta verso (numero a caso tra (0) e (360))
+fai (10) passi
+mostra

@@ -1,0 +1,7 @@
+usa stile rotazione [può ruotare v]
+per sempre
+se <(distanza da (chiave v) ) < (100)>  allora
+punta in direzione (90)
+altrimenti
+punta in direzione (0)
+end

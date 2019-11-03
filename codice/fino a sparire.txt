@@ -1,0 +1,3 @@
+per sempre
+    porta dimensione a (energia) %
+end

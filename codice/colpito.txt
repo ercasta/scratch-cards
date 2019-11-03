@@ -1,0 +1,3 @@
+porta effetto [colore v] a (40)
+attendi (0.1) secondi
+porta effetto [colore v] a (0)

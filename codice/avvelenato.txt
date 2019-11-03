@@ -1,0 +1,6 @@
+per sempre
+    se < (avvelenato) = [si] > allora
+        attendi (1) secondi
+        cambia [energia v] di (-1)
+    end
+end

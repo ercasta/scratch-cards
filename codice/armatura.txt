@@ -1,0 +1,1 @@
+cambia [danno v] di ((-1) * (armatura))

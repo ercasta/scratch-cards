@@ -1,0 +1,4 @@
+attendi (3) secondi
+passa al costume (esplosione v)
+attendi (0.3) secondi
+nascondi

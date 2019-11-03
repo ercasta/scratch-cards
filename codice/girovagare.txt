@@ -1,0 +1,8 @@
+quando si clicca sulla bandiera verde
+per sempre 
+  punta in direzione (numero a caso tra (1) e (360))
+  ripeti (10) volte
+  	fai (5) passi
+  end
+    attendi (1) secondi
+end

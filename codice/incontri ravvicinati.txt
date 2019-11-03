@@ -1,0 +1,7 @@
+per sempre
+    se <sta toccando (avversario v)> allora
+        nascondi
+        attendi (3) secondi
+        mostra
+    end
+end

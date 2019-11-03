@@ -1,0 +1,2 @@
+raggiungi (base v)
+mostra

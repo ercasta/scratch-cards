@@ -1,0 +1,6 @@
+quando si clicca sulla bandiera verde
+porta effetto [luminosità v] a (50)
+ripeti (10) volte 
+  attendi (0.7) secondi
+  cambia effetto [luminosità v] di (-5)
+end

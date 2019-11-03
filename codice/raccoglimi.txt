@@ -1,0 +1,3 @@
+se <sta toccando (Personaggio v)> allora
+    nascondi
+    cambia (contatore v) di (1)
