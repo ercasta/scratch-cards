@@ -34,11 +34,7 @@
             }
         </style>
         <style>
-            @media (min-width: 992px) {
-              .col-md-4:nth-child(3n+1) {
-                clear: left;
-              }
-            }
+           
         </style>
 
     </head>
@@ -55,14 +51,8 @@
                     </form><br/>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-4" data-nomecarta="primi passi" > <img class="carta" src="carte tecnica/primi passi.svg" /></div>
-                <div class="col-md-4" data-nomecarta="da mattina a sera" >  <img class="carta" src="carte tecnica/damattinaasera.svg" />
-                </div>
-                <div class="col-md-4" data-nomecarta="ancora un altro" ><img class="carta" src="carte tecnica/ancora un altro.svg" />
-                </div>
-                <div class="col-md-4" data-nomecarta="trasportare" ><img class="carta" src="carte tecnica/trasportare.svg" />
-                </div>
+            <div class="row" id="riga-carte" >
+                
             </div>
         </div>
 
@@ -71,6 +61,59 @@
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="static/libraries/bootstrap-3/js/bootstrap.min.js"></script>
         <script type="text/javascript">
+        var dati = {carte:[
+{nome:'...fino a sparire', nomeFile:'...fino a sparire.svg', doppia:false},
+{nome:'alchimia', nomeFile:'alchimia.svg', doppia:true},
+{nome:'ancora un altro', nomeFile:'ancora un altro.svg', doppia:false},
+{nome:'ancora vivo', nomeFile:'ancora vivo.svg', doppia:false},
+{nome:'armatura', nomeFile:'armatura.svg', doppia:false},
+{nome:'avvelenato', nomeFile:'avvelenato.svg', doppia:false},
+{nome:'bomba', nomeFile:'bomba.svg', doppia:false},
+{nome:'bottino', nomeFile:'bottino.svg', doppia:true},
+{nome:'caricare', nomeFile:'caricare.svg', doppia:false},
+{nome:'ce l\'hai la chiave', nomeFile:'ce l\'hai la chiave.svg', doppia:false},
+{nome:'colpito', nomeFile:'colpito.svg', doppia:false},
+{nome:'da mattina a sera', nomeFile:'damattinaasera.svg', doppia:false},
+{nome:'dammi tregua', nomeFile:'dammi tregua.svg', doppia:true},
+{nome:'fendente', nomeFile:'fendente.svg', doppia:false},
+{nome:'girovagare', nomeFile:'girovagare.svg', doppia:false},
+{nome:'incontri ravvicinati', nomeFile:'incontri ravvicinati.svg', doppia:false},
+{nome:'inseguire', nomeFile:'inseguire.svg', doppia:false},
+{nome:'mancato!', nomeFile:'mancato!.svg', doppia:false},
+{nome:'muro', nomeFile:'muro.svg', doppia:false},
+{nome:'portale', nomeFile:'portale.svg', doppia:false},
+{nome:'primi passi', nomeFile:'primi passi.svg', doppia:false},
+{nome:'proiettile', nomeFile:'proiettile.svg', doppia:false},
+{nome:'qua e là', nomeFile:'qua e là.svg', doppia:false},
+{nome:'raccoglimi', nomeFile:'raccoglimi.svg', doppia:false},
+{nome:'ricarica', nomeFile:'ricarica.svg', doppia:true},
+{nome:'ricominciare', nomeFile:'ricominciare.svg', doppia:false},
+{nome:'rotante', nomeFile:'rotante.svg', doppia:false},
+{nome:'sono fatto così', nomeFile:'sono fatto così.svg', doppia:false},
+{nome:'tana del nemico', nomeFile:'tana del nemico.svg', doppia:true},
+{nome:'tempus fugit', nomeFile:'tempus fugit.svg', doppia:false},
+{nome:'traguardo', nomeFile:'traguardo.svg', doppia:false},
+{nome:'trappola spuntoni', nomeFile:'trappola spuntoni.svg', doppia:false},
+{nome:'trasportare', nomeFile:'trasportare.svg', doppia:false},
+{nome:'tutti a propri posti', nomeFile:'tutti a propri posti.svg', doppia:false},
+{nome:'velocità', nomeFile:'velocità.svg', doppia:false},
+{nome:'vicino vicino', nomeFile:'vicino vicino.svg', doppia:false}
+            ]};
+
+        function popolaCarte(dati) {
+              var rigacarte = $("#riga-carte");
+              for (var i = 0; i < dati.carte.length; i++) {
+                var carta = dati.carte[i];
+                var cols = 4;
+                var colsxs=6;
+                if (carta.doppia) {
+                    cols = 8;
+                    colsxs=12;
+                }
+                rigacarte.append('<div class="col-md-'+cols+' col-xs-'+colsxs+'" data-nomecarta="' + carta.nome +'" > <a href="carte tecnica/'+ carta.nomeFile +'"><img class="carta" src="carte tecnica/'+carta.nomeFile+'" /></a></div>')
+              }
+            }
+
         $(document).ready(function(){
             $(window).keydown(function(event){
                 if(event.keyCode == 13) {
@@ -80,13 +123,15 @@
               });
             $("#ricerca").on('input',function(){  
                 $("[data-nomecarta]").show()
-                var dacercare = $("#ricerca").val();
-                if ($.trim(this.value).length) {
+                var dacercare = $("#ricerca").val().toLowerCase();
+                if ($.trim(dacercare).length) {
                     $("[data-nomecarta]").hide()
                     $("[data-nomecarta*='" + dacercare +"']" ).show()
                 }
                 });
+            popolaCarte(dati);
             });
+            
         </script>
     </body>
 </html>
