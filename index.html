@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <meta name="author" content="CoderDojo Lissone" />
+        <link rel="icon" href="static/custom-brand/favicon.ico" />
+        <title>CoderDojo Lissone</title>
+        <!--<link rel="stylesheet" href="{% static 'toolbox/css/main1.css' %}"/>-->
+
+        <!-- Bootstrap -->
+        <link href="lib/bootstrap-3/css/bootstrap.min.css" rel="stylesheet"/>
+
+        <!-- Jumbotron -->
+        <link href="static/css/jumbotron.css" rel="stylesheet"/>
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+      <script src="static/libraries/html5shiv.min.js"></script>
+      <script src="static/toolbox/libraries/respond.min.js"></script>
+    <![endif]-->
+
+        <script src="lib/jquery-3.4.1.min.js"></script>
+
+
+        <style>
+            img.carta {
+              height: 75%;
+              width: 75%;
+              padding:3px;
+            }
+        </style>
+        <style>
+            @media (min-width: 992px) {
+              .col-md-4:nth-child(3n+1) {
+                clear: left;
+              }
+            }
+        </style>
+
+    </head>
+
+    <body id="sfondo">
+
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <form>
+                        <p>Inserisci il nome della carta</p><input id="ricerca" type="text" />
+                    </form><br/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4" data-nomecarta="primi passi" > <img class="carta" src="carte tecnica/primi passi.svg" /></div>
+                <div class="col-md-4" data-nomecarta="da mattina a sera" >  <img class="carta" src="carte tecnica/damattinaasera.svg" />
+                </div>
+                <div class="col-md-4" data-nomecarta="ancora un altro" ><img class="carta" src="carte tecnica/ancora un altro.svg" />
+                </div>
+                <div class="col-md-4" data-nomecarta="trasportare" ><img class="carta" src="carte tecnica/trasportare.svg" />
+                </div>
+            </div>
+        </div>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="static/libraries/jquery-3.3.1.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="static/libraries/bootstrap-3/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $(window).keydown(function(event){
+                if(event.keyCode == 13) {
+                  event.preventDefault();
+                  return false;
+                }
+              });
+            $("#ricerca").on('input',function(){  
+                $("[data-nomecarta]").show()
+                var dacercare = $("#ricerca").val();
+                if ($.trim(this.value).length) {
+                    $("[data-nomecarta]").hide()
+                    $("[data-nomecarta*='" + dacercare +"']" ).show()
+                }
+                });
+            });
+        </script>
+    </body>
+</html>
