@@ -10,9 +10,9 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="149mm"
-   height="211mm"
-   viewBox="0 0 149 211"
+   width="297.75mm"
+   height="211.625mm"
+   viewBox="0 0 297.75 211.625"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
@@ -23,7 +23,7 @@
        inkscape:collect="always"
        xlink:href="#Wavy"
        id="pattern7179"
-       patternTransform="rotate(-18.642732,-1.7730707,1.2730978)" />
+       patternTransform="rotate(-18.642732,-3.3586692,1.403872)" />
     <pattern
        inkscape:collect="always"
        xlink:href="#Wavy"
@@ -62,7 +62,7 @@
        inkscape:collect="always"
        xlink:href="#Wavy-2"
        id="pattern7179-0"
-       patternTransform="rotate(-18.642732,-1.773058,1.2731045)" />
+       patternTransform="rotate(-18.642732,-3.3586565,1.4038787)" />
     <pattern
        inkscape:stockid="Wavy"
        id="Wavy-2"
@@ -85,8 +85,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.48146515"
-     inkscape:cx="328.76061"
-     inkscape:cy="465.48472"
+     inkscape:cx="-84.088661"
+     inkscape:cy="465.95716"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -109,7 +109,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -117,7 +117,7 @@
      inkscape:label="Livello 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0.5,-86.500008)">
+     transform="translate(0.625,-86.000008)">
     <g
        id="g1087">
       <rect

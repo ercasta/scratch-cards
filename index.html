@@ -31,6 +31,8 @@
               height: 75%;
               width: 75%;
               padding:3px;
+              align: center;
+              display: inline-block;
             }
         </style>
         <style>
@@ -62,6 +64,12 @@
         <script src="static/libraries/bootstrap-3/js/bootstrap.min.js"></script>
         <script type="text/javascript">
         var dati = {carte:[
+{nome:'asteroidi', nomeFile:'asteroidi.svg', doppia:false, tipo:'gioco'},
+{nome:'cattura la bandiera', nomeFile:'cattura la bandiera.svg', doppia:true, tipo:'gioco'},
+{nome:'difendi la base', nomeFile:'difendi la base.svg', doppia:false, tipo:'gioco'},
+{nome:'Il duello', nomeFile:'Il duello.svg', doppia:false, tipo:'gioco'},
+{nome:'labirinto', nomeFile:'labirinto.svg', doppia:true, tipo:'gioco'},
+{nome:'riportalo a casa', nomeFile:'riportalo a casa.svg', doppia:false, tipo:'gioco'},
 {nome:'...fino a sparire', nomeFile:'...fino a sparire.svg', doppia:false},
 {nome:'alchimia', nomeFile:'alchimia.svg', doppia:true},
 {nome:'ancora un altro', nomeFile:'ancora un altro.svg', doppia:false},
@@ -84,7 +92,7 @@
 {nome:'portale', nomeFile:'portale.svg', doppia:false},
 {nome:'primi passi', nomeFile:'primi passi.svg', doppia:false},
 {nome:'proiettile', nomeFile:'proiettile.svg', doppia:false},
-{nome:'qua e là', nomeFile:'qua e là.svg', doppia:false},
+{nome:'qua e là', nomeFile:'qua e là.svg', doppia:true},
 {nome:'raccoglimi', nomeFile:'raccoglimi.svg', doppia:false},
 {nome:'ricarica', nomeFile:'ricarica.svg', doppia:true},
 {nome:'ricominciare', nomeFile:'ricominciare.svg', doppia:false},
@@ -102,15 +110,29 @@
 
         function popolaCarte(dati) {
               var rigacarte = $("#riga-carte");
+              var accum = 0;
               for (var i = 0; i < dati.carte.length; i++) {
                 var carta = dati.carte[i];
                 var cols = 4;
                 var colsxs=6;
+                accum = accum + 1;
                 if (carta.doppia) {
                     cols = 8;
                     colsxs=12;
+                    accum = accum + 1;
                 }
-                rigacarte.append('<div class="col-md-'+cols+' col-xs-'+colsxs+'" data-nomecarta="' + carta.nome +'" > <a href="carte tecnica/'+ carta.nomeFile +'"><img class="carta" src="carte tecnica/'+carta.nomeFile+'" /></a></div>')
+                var folder = null;
+                if (carta.tipo == 'gioco') {
+                    folder = 'giocarte';
+                } else {
+                    folder = 'carte tecnica';
+                }
+                rigacarte.append('<div class="col-md-'+cols+' col-xs-'+colsxs+'" data-nomecarta="' + carta.nome +'" > <a href="carte tecnica/'+ carta.nomeFile +'"><img class="carta" src="' + folder + '/' +carta.nomeFile+'" /></a></div>')
+                // fix variable column height
+                if (accum>=3) {
+                    accum = 0;
+                    rigacarte.append('<div class="clearfix visible-md visible-lg"></div>')
+                }
               }
             }
 
