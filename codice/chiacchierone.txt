@@ -1,0 +1,12 @@
+cambia [frase v] di (1)
+se < (frase) > (lunghezza di [frasi v]) > allora
+    porta [frase v] a (1)
+end
+dire (elemento (frase) di [frasi v]) per (2) secondi
+
+quando si clicca sulla bandiera verde
+porta [frase v] a (0)
+cancella tutto da [frasi v]
+aggiungi (Ciao) a [frasi v]
+aggiungi (Come stai?) a [frasi v]
+aggiungi (Bel tempo oggi!) a [frasi v]

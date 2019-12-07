@@ -1,0 +1,9 @@
+se < <distanza da (materiale v)> < (50) > allora
+invia a tutti (crea v)
+
+quando ricevo [crea v]
+nascondi
+
+quando ricevo [crea v]
+raggiungi (materiale v)
+mostra

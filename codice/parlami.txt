@@ -1,0 +1,5 @@
+quando ricevo [parlami v]
+	se < (distanza da (Personaggio v)) < (150) > allora
+		dire [Sai che...] per (3) secondi
+	end
+end
